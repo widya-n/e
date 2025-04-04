@@ -1,0 +1,4 @@
+User-agent: *
+allow:
+
+Sitemap: https://widya-n.github.io/e/sitemap.xml
