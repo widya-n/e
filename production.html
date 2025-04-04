@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عملية الإنتاج - مياه وديان</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+
+        .production-page {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .production-intro {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .production-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .production-step {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.2);
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.5s ease-out;
+        }
+        
+        .production-step.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .step-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .step-icon {
+            width: 60px;
+            height: 60px;
+            background: #E69A8D;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 1.5rem;
+            font-size: 1.8rem;
+            color: white;
+        }
+        
+        .step-number {
+            background: #5F4B8B;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 1rem;
+        }
+        
+        .process-animation {
+            height: 100px;
+            margin: 1.5rem 0;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            background: rgba(0,0,0,0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .production-page {
+                padding: 2rem 1rem;
+            }
+            
+            .step-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .step-icon {
+                margin-left: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="logo-container">
+        <img src="log.png" alt="شعار مياه وديان" class="logo">
+        مياه وديان
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+    </button>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="quality.html">الجودة</a></li>
+            <li><a href="production.html">الإنتاج</a></li>
+            <li><a href="faq.html">أسئلة</a></li>
+            <li><a href="testimonials.html">آراء</a></li>
+            <li><a href="order.html">طلب</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="production-page">
+        <section class="production-intro">
+            <h2>مراحل إنتاج مياه وديان</h2>
+            <p>تمر المياه بعملية تنقية دقيقة من خلال خطوات عديدة لضمان جودتها ونقاوتها</p>
+        </section>
+
+        <section class="production-steps">
+            <!-- مرحلة الفلترة -->
+            <div class="production-step">
+                <div class="step-header">
+                    <div class="step-icon">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <h3>عمليـة الفلتـره</h3>
+                    <div class="step-number">1</div>
+                </div>
+                <div class="process-animation" id="filtration-animation">
+                    <!-- سيتم إضافة الأنيميشن بالجافاسكريبت -->
+                </div>
+                <p>تمر المياه على فلاتر (ميديا) وفلاتر ميكرونيه لحجب كل الشوائب التى فى المياه</p>
+            </div>
+
+            <!-- مرحلة التنقية -->
+            <div class="production-step">
+                <div class="step-header">
+                    <div class="step-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>عمليـة التنقيـه</h3>
+                    <div class="step-number">2</div>
+                </div>
+                <div class="process-animation" id="purification-animation">
+                    <!-- سيتم إضافة الأنيميشن بالجافاسكريبت -->
+                </div>
+                <p>إزالة أي مواد ضارة أو معادن ثقيلة لضمان نقاء المياه</p>
+            </div>
+
+            <!-- مرحلة التخزين -->
+            <div class="production-step">
+                <div class="step-header">
+                    <div class="step-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>عمليـة التخـزيـن</h3>
+                    <div class="step-number">3</div>
+                </div>
+                <div class="process-animation" id="storage-animation">
+                    <!-- سيتم إضافة الأنيميشن بالجافاسكريبت -->
+                </div>
+                <p>تخزين المياه في خزانات معقمة ومحكمة الإغلاق</p>
+            </div>
+
+            <!-- مرحلة التعقيم -->
+            <div class="production-step">
+                <div class="step-header">
+                    <div class="step-icon">
+                        <i class="fas fa-bacteria"></i>
+                    </div>
+                    <h3>عمليـة التعقيـم</h3>
+                    <div class="step-number">4</div>
+                </div>
+                <div class="process-animation" id="sterilization-animation">
+                    <!-- سيتم إضافة الأنيميشن بالجافاسكريبت -->
+                </div>
+                <p>تعقيم المياه باستخدام الأشعة فوق البنفسجية لضمان خلوها من أي ملوثات</p>
+            </div>
+
+            <!-- مرحلة التعبئة -->
+            <div class="production-step">
+                <div class="step-header">
+                    <div class="step-icon">
+                        <i class="fas fa-wine-bottle"></i>
+                    </div>
+                    <h3>عمليـة التعبئـة</h3>
+                    <div class="step-number">5</div>
+                </div>
+                <div class="process-animation" id="bottling-animation">
+                    <!-- سيتم إضافة الأنيميشن بالجافاسكريبت -->
+                </div>
+                <p>تعبئة المياه في زجاجات معقمة باستخدام آلات أوتوماتيكية</p>
+            </div>
+
+            <!-- مرحلة وضع العلامة -->
+            <div class="production-step">
+                <div class="step-header">
+                    <div class="step-icon">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <h3>عملية وضع العلامـة</h3>
+                    <div class="step-number">6</div>
+                </div>
+                <div class="process-animation" id="labeling-animation">
+                    <!-- سيتم إضافة الأنيميشن بالجافاسكريبت -->
+                </div>
+                <p>وضع ملصقات تحتوي على معلومات المنتج وتاريخ الإنتاج والانتهاء</p>
+            </div>
+
+            <!-- مرحلة مراقبة الجودة -->
+            <div class="production-step">
+                <div class="step-header">
+                    <div class="step-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>عملية مراقبـة الجـودة</h3>
+                    <div class="step-number">7</div>
+                </div>
+                <div class="process-animation" id="quality-animation">
+                    <!-- سيتم إضافة الأنيميشن بالجافاسكريبت -->
+                </div>
+                <p>فحص عينات عشوائية للتأكد من جودة المنتج النهائي</p>
+            </div>
+        </section>
+    </main>
+
+     <footer>
+        <p>© 2025 مياه وديان - جميع الحقوق محفوظة</p>
+</p>
+‎‏<p>
+‎‏        <a href="https://wa.me/201025752676" target="_blank">© 2025 تم التطوير بواسطه مؤمن نصار</a>
+</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/widyan.water?igsh=cXJ0YnF2aXh5cGd4"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/widyan.water?igsh=cXJ0YnF2aXh5cGd4"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/+971501444642"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // كود الأنيميشن لمراحل الإنتاج
+        document.addEventListener('DOMContentLoaded', function() {
+            // مراقبة ظهور العناصر عند التمرير
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                        animateStep(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            document.querySelectorAll('.production-step').forEach(step => {
+                observer.observe(step);
+            });
+            
+            // إنشاء الأنيميشن لكل مرحلة
+            function animateStep(step) {
+                const animationDiv = step.querySelector('.process-animation');
+                const stepId = animationDiv.id;
+                
+                switch(stepId) {
+                    case 'filtration-animation':
+                        createFiltrationAnimation(animationDiv);
+                        break;
+                    case 'purification-animation':
+                        createPurificationAnimation(animationDiv);
+                        break;
+                    case 'storage-animation':
+                        createStorageAnimation(animationDiv);
+                        break;
+                    case 'sterilization-animation':
+                        createSterilizationAnimation(animationDiv);
+                        break;
+                    case 'bottling-animation':
+                        createBottlingAnimation(animationDiv);
+                        break;
+                    case 'labeling-animation':
+                        createLabelingAnimation(animationDiv);
+                        break;
+                    case 'quality-animation':
+                        createQualityAnimation(animationDiv);
+                        break;
+                }
+            }
+            
+            // أنيميشن الفلترة
+            function createFiltrationAnimation(container) {
+                container.innerHTML = `
+                    <div class="water-drops"></div>
+                    <div class="filter-layer"></div>
+                    <div class="impurities"></div>
+                `;
+                
+                // يمكن إضافة أنيميشن متقدم باستخدام GSAP أو CSS
+            }
+            
+            // أنيميشن التنقية
+            function createPurificationAnimation(container) {
+                container.innerHTML = `
+                    <div class="clean-water"></div>
+                    <div class="purification-bubbles"></div>
+                `;
+            }
+            
+            // باقي دوال الأنيميشن...
+        });
+    </script>
+</body>
+</html>

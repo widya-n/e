@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طلب منتج - مياه وديان</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* أنماط خاصة بصفحة الطلب */
+        .order-page {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 6rem auto 2rem;
+        }
+        
+        .order-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .product-selection {
+            flex: 1;
+            min-width: 300px;
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .order-summary {
+            flex: 1;
+            min-width: 300px;
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+        }
+        
+        .product-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.05);
+            transition: all 0.3s;
+        }
+        
+        .product-card:hover {
+            background: rgba(255,255,255,0.15);
+        }
+        
+        .product-card img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-left: 1rem;
+        }
+        
+        .product-info {
+            flex: 1;
+        }
+        
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+            margin-top: 0.5rem;
+        }
+        
+        .quantity-btn {
+            background: #5F4B8B;
+            color: white;
+            border: none;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .quantity-input {
+            width: 50px;
+            text-align: center;
+            margin: 0 0.5rem;
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            border-radius: 5px;
+            padding: 0.3rem;
+        }
+        
+        .checkout-btn {
+            background: #E69A8D;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            margin-top: 2rem;
+            transition: all 0.3s;
+        }
+        
+        .checkout-btn:hover {
+            background: #d4877a;
+            transform: translateY(-3px);
+        }
+        
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            margin-top: 1rem;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .whatsapp-btn:hover {
+            background: #128C7E;
+            transform: translateY(-3px);
+        }
+        
+        .whatsapp-btn i {
+            margin-left: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .order-page {
+                padding: 1rem;
+                margin-top: 4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="logo-container">
+        <img src="log.png" alt="شعار مياه وديان" class="logo">
+        مياه وديان
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+    </button>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="quality.html">الجودة</a></li>
+            <li><a href="production.html">الإنتاج</a></li>
+            <li><a href="faq.html">أسئلة</a></li>
+            <li><a href="testimonials.html">آراء</a></li>
+            <li><a href="order.html">طلب</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="order-page">
+        <h2>طلب منتجات مياه وديان</h2>
+       
+                <a href="https://widya-n.ordersapps.com/ar" class="checkout-btn">
+                   <i>order    </i> الطلب عبر متجرنا الالكتروني
+                </a>
+                
+                <a href="https://wa.me/971501444642?text=أريد طلب منتجات مياه وديان" class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> الطلب عبر واتساب
+                </a>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 مياه وديان - جميع الحقوق محفوظة</p>
+</p>
+‏<p>
+‏        <a href="https://wa.me/201025752676" target="_blank">© 2025 تم التطوير بواسطه مؤمن نصار</a>
+</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/widyan.water?igsh=cXJ0YnF2aXh5cGd4"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/widyan.water?igsh=cXJ0YnF2aXh5cGd4"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/+971501444642"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+   <script src="script.js"></script>
+  
+</body>
+</html>
